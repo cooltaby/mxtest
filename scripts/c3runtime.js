@@ -4578,14 +4578,15 @@ C3.Plugins.ValerypopoffJSPlugin.Instance.prototype.EXPS = C3.Plugins.Valerypopof
 		C3.Plugins.Text,
 		C3.Plugins.Touch,
 		C3.Plugins.ValerypopoffJSPlugin,
-		C3.Plugins.Touch.Cnds.OnTapGestureObject,
-		C3.Plugins.System.Acts.GoToLayout,
-		C3.ScriptsInEvents.EventSheet1_Event1_Act2,
 		C3.Plugins.ValerypopoffJSPlugin.Cnds.AllScriptsLoaded,
 		C3.Plugins.System.Cnds.TriggerOnce,
 		C3.Plugins.ValerypopoffJSPlugin.Acts.InitAlias,
 		C3.Plugins.ValerypopoffJSPlugin.Acts.Call,
-		C3.ScriptsInEvents.EventSheet1_Event4_Act1
+		C3.Plugins.System.Cnds.OnLayoutStart,
+		C3.ScriptsInEvents.EventSheet1_Event3_Act1,
+		C3.Plugins.Touch.Cnds.OnTapGestureObject,
+		C3.Plugins.System.Acts.GoToLayout,
+		C3.ScriptsInEvents.EventSheet2_Event2_Act1
 		];
 	};
 	self.C3_JsPropNameTable = [
@@ -4595,6 +4596,9 @@ C3.Plugins.ValerypopoffJSPlugin.Instance.prototype.EXPS = C3.Plugins.Valerypopof
 		{Touch: 0},
 		{Sprite2: 0},
 		{js: 0},
+		{Sprite3: 0},
+		{Play: 0},
+		{Sprite4: 0},
 		{SCORE: 0},
 		{HIGHSCORE: 0}
 	];
@@ -4712,7 +4716,7 @@ C3.Plugins.ValerypopoffJSPlugin.Instance.prototype.EXPS = C3.Plugins.Valerypopof
 {
 	const scriptsInEvents = {
 
-		async EventSheet1_Event1_Act2(runtime, localVars)
+		async EventSheet1_Event3_Act1(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			    try {
@@ -4723,7 +4727,7 @@ C3.Plugins.ValerypopoffJSPlugin.Instance.prototype.EXPS = C3.Plugins.Valerypopof
 			}
 		},
 
-		async EventSheet1_Event4_Act1(runtime, localVars)
+		async EventSheet2_Event2_Act1(runtime, localVars)
 		{
 			if (typeof gameManager !== 'undefined') {
 			var data = gameManager.onGameInit()
